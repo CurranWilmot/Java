@@ -10,9 +10,27 @@
 <script type="text/javascript" src="/js/app.js"></script>
 </head>
 <body>
-	<h1>Test!!! YAY!</h1>
-	<p><c:out value="${book.title}"/></p>
+	<h1>All Books</h1>
 	
-	<p><c:out value="${books}"/></p>]
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Language</th>
+            <th>Number of Pages</th>
+        </tr>
+    </thead>
+    <tbody>
+         <c:forEach var="oneBook" items="${books}">
+         <tr>
+         	<td><a href="/books/${oneBook.id}"><c:out value="${oneBook.title}"/></a></td>
+         	<td><a><c:out value="${oneBook.language}"/></a></td>
+         	<td><a><c:out value="${oneBook.numberOfPages}"/></a></td>
+         </tr>
+         </c:forEach>
+    </tbody>
+</table>
+	
 </body>
 </html>
