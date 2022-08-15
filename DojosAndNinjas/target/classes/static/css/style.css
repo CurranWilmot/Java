@@ -1,0 +1,23 @@
+
+h1{
+	color: blue;
+}
+
+th{
+    border: 1px solid blue;
+    padding: 10px;
+}
+
+td{
+    border: 1px solid blue;
+    padding: 10px;
+}
+
+
+table{
+	border: 15px solid blue;
+}
+
+.text-danger{
+	color: red;
+}
