@@ -1,0 +1,40 @@
+h1{
+	color: purple;
+}
+
+
+th{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+table{
+	border: 15px solid black;
+}
+
+.text-danger{
+	color: red;
+}
+
+.main-body{
+	display: flex;
+}
+
+.half-body{
+	margin: 20px;
+}
+
+.top-bar{
+	display: flex;
+	justify-content: space-between;
+}
+.top-right{
+	display: flex;
+	flex-direction: column;
+}
